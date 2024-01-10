@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(99, 99, 99);
+
+        }
+        .radio{
+            height:100vh;
+            width:100vw;
+            color:white;  
+        }
+        label{
+            margin:15px;
+        }
+        .b1{
+            display: inline-block;
+            margin-left: 800px;
+            margin-top:-3000px;
+            background-color:rgb(0, 217, 255);
+            height:150px;
+            width:100px;
+            padding:10px;
+            font-size:20px;
+
+        }
+        #id1:checked~.b1{
+            transform: none;
+
+        }
+        #id2:checked~.b1{
+           transform:rotate(10deg);
+        }
+       
+        #id3:checked~.b1{
+            transform:rotate(45deg);
+        }
+        #id4:checked~.b1{
+            transform:rotateX(45deg);
+        }
+        #id5:checked~.b1{
+            transform:rotateY(45deg);
+        }
+        #id6:checked~.b1{
+            transform:skew(20deg,20deg);
+        }
+        #id7:checked~.b1{
+            transform:skewX(30deg);
+        }
+        #id8:checked~.b1{
+            transform:skewY(30deg);
+        }
+        #id9:checked~.b1{
+            transform:translate(20px,10px);
+        }
+        #id10:checked~.b1{
+            transform:scale(2,3);
+        }
+        #id11:checked~.b1{
+            transform:matrix(0.866,0.7,-0.8,0.866,0,0);;
+        }
+
+
+    </style>
+</head>
+<body> 
+<div class="radio">
+            <input type="radio" id="id1" name="transform" value="none">
+            <label for="id1">transform:none;</label><br><br>
+            <input type="radio" id="id2"name="transform" value="10deg">
+            <label for="id2">transform:rotate(10deg);</label><br><br>
+            <input type="radio" id="id3" name="transform" value="45deg">
+            <label for="id3">transform:rotate(45deg);</label><br><br>
+            <input type="radio" id="id4" name="transform" value="x-45deg">
+            <label for="id4">transform:rotateX(45deg);</label><br><br>
+            <input type="radio" id="id5" name="transform" value="Y-45">
+            <label for="id5">transform:rotateY(45deg)</label><br><br>
+            <input type="radio" id="id6" name="transform" value="skew">
+            <label for="id6">transform:skew(20deg,20deg);</label><br><br>
+            <input type="radio"id="id7" name="transform" value="skew">
+            <label for="id7">transform:skewX(30deg);</label><br><br>
+            <input type="radio" id="id8" name="transform" value="skew">
+            <label for="id8">transform:skewY(30deg);</label><br><br>
+            <input type="radio" id="id9"name="transform" value="translate">
+            <label for="id9">transform:translate(20px,10px);</label><br><br>
+            <input type="radio"id="id10" name="transform" value="scale">
+            <label for="id10">transform:scale(2,3);</label><br><br>  
+            <input type="radio"id=id11 name="transform" value="matrix">
+            <label for="id11">transform:matrix(0.866,0.7,-0.8,0.866,0,0);</label><br><br>
+        <div class="b1">
+           See what different transform values does with this blue DIV
+        </div>
+    </div>
+</body>
+</html>
